@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Search Results{% endblock %}
+{% block content %}
+    <h2 style="padding-left: 300px;">Your Search Results</h2>
+    <h3>
+        {% with results.count as total_results %}
+        Found {{ total_results }} result
+        {% endwith %}
+    </h3>
+    {% for movie in results %}
+        <h2><a href="{{ movie.get_absolute_url }}">{{ movie.title }}</a></h2>
+    {% empty %}
+        <p>No Movie Found</p>
+    {% endfor %}
+{% endblock %}

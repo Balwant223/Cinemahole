@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}CinemaHole{% endblock %}
+{% block content %}
+    {% if genre %}
+        <h2>Top Movies With Genre: {{ genre.name }}</h2>
+    {% endif %}
+    {% for i in movie %}
+        <table class="m_table">
+            <th class="m_title" colspan="3"><a href="{{ i.get_absolute_url }}">{{ i.title }}</a></th>
+            <tr>
+                <td style="padding: 5px;"><strong>Director</strong></td>
+                <td style="padding: 5px;">{{ i.director }}
+                <td rowspan="4"><img style="height:300px;width:200px;display:block;border-radius: 5px;" src="{{ i.poster.url }}"></td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;"><strong>{{ i.status }}</strong> On</td>
+                <td style="padding: 5px;">{{ i.release }}</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;"><strong>Starring</strong></td>
+                <td style="padding: 5px;">
+                {{ i.starring|linebreaks }}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;"><strong>IMDB Rating</strong></td>
+                <td style="padding: 5px;">{{ i.rating }}</td>
+            </tr>
+        </table>
+        </br>
+    {% empty %}
+        <p>No Movie Found</p>
+    {% endfor %}
+    {% include "pagination.html" with page=movie %}
+{% endblock %}

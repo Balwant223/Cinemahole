@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}{{ movie.title }}{% endblock %}
+{% block content %}
+
+
+<!--Movie Details-->
+    <div class="movie_detail">
+        <h1>{{ movie.title }}</h1>
+        <img src="{{ movie.poster.url }}">
+        <p><strong>{{ movie.status }}</strong> on {{ movie.release }}</p>
+        <p><strong>Directed</strong> by {{ movie.director }}</p>
+        <p><strong>Cast:</strong> {% for i in movie.starring %}{{ i }}{% endfor %}</p>
+        <p><strong>Genre:</strong> {{ movie.genre.all|join:", " }}</p>
+        <p><strong>Imdb  Rating:</strong> {{ movie.rating }}</p>
+        <div class="plot">
+            <h2 style="padding-top: 50px;">Plot</h2>
+            <p>{{ movie.Plot|linebreaks }}</p>
+        </div>
+        </div>
+
+
+    <!--Movie Suggestions-->
+    <div class="sug_movies">
+        <h2><strong>Similar Movies</strong></h2>
+        {% for i in similar_movies %}
+            <p>{{ forloop.counter }}. <a href="{{ i.get_absolute_url }}">{{ i.title }}</a></p>
+        {% empty %}
+            <p>There is no Similar Movies yet</p>
+        {% endfor %}
+    </div>
+    
+    <!--Movie Reviews-->
+    {% for i in reviews %}
+        <div class="review">
+            <p class="info">
+                 {{ i.user }}
+                {{ i.created }}
+            </p>
+            <p class="rev">{{ i.review|linebreaks }}</p>
+        </div>
+    {% empty %}
+        <p>There is no Reviews yet</p>
+    {% endfor %}
+    {% if new_review %}
+        <h2>Your Review is Added SuccessFully</h2>
+    {% else %}
+        <p>Add new Review</p>
+        <form method="POST">
+            {{ r_form.as_p }}
+            {% csrf_token %}
+            <p><input type="submit" value="Add Review"></p>
+        </form>
+    {% endif %}
+{% endblock %}

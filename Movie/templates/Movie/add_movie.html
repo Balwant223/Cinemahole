@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Write Movie{% endblock %}
+{% block content %}
+    <h1> Write Movie By filling Following form</h1>
+    <form class="farm_bharo" method="post" enctype="multipart/form-data">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" value="Submit Movie">
+    </form>
+{% endblock %}

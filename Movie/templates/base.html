@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link href="{% static "css/base.css" %}?version=51" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+        {% if request.path == '/Movie/' %}
+            <div class="logo">CinemaHole</div>
+            <div class="search">
+                <form method="get">{{ form.as_p }}<input type="hidden"></form>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="{% url "Movie:add_movie" %}">Add Movie</a>
+                    </li>
+                    {% if request.user.is_authenticated %}
+                    <li><span class="hii">Hii</span><span class="user_ji">{{ request.user.first_name }}</span></li>
+                    <li><a href="{% url 'User:logout' %}">Logout</a></li>
+                    {% else %}
+                    <li><a href="{% url 'User:login' %}">Login</a></li>
+                    <li class="fadu">Sign Up</li>
+                    {% endif %}
+                </ul>
+            </div>
+        {% else %}
+            <div class="logo"><a href="{% url 'Movie:movie_list' %}">CinemaHole</a></div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="{% url "Movie:add_movie" %}">Add Movie</a>
+                    </li>
+                {% if request.user.is_authenticated %}
+                    <li>Hii <span class="user_ji">{{ request.user.first_name }}</span></li>
+                    <li><a href="{% url 'User:logout' %}">Logout</a></li>
+                {% else %}
+                    <li><a href="{% url 'User:login' %}">Login</a></li>
+                    <li class="fadu">Sign Up</li>
+                {% endif %}
+                </ul>
+            </div>
+        {% endif %}
+        </div>
+        <div id="main-content">
+            <div class="movies">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div class="right-content">
+                <h3>Top movie According to Genre</h3>
+                <ul>
+                    {% for i in genres %}
+                    <li><a href="{% url 'Movie:movie_filter' i.slug %}">{{ i.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <br style="clear: left;" />
+        </div>
+    </body>
+</html>

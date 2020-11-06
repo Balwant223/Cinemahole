@@ -18,23 +18,23 @@ Libraries required for this project-:
 # How ot run
 1. Clone the project to your local Directorty.
 2. Then 
-                                             Cd "Project_Folder"
+                                             'Cd "Project_Folder" '
 3. Create a virtual environment:
       On macOS and Linux: 
-                                             python3 -m venv your_env_name 
+                                             'python3 -m venv your_env_name '
       On Windows(****Creep****):
-                                              py -m venv your_env_name )
+                                              'py -m venv your_env_name '
 4. Activate Environment :
       On macOS and Linux:
-                                             env/bin/activate 
+                                             'env/bin/activate '
       On Windows(****Again Creeps****):
-                                             .\env\Scripts\activate )
+                                             .\env\Scripts\activate '
                     
                     [****** Important All this above and below Commands must run on your project Source Directories *****]
                     
 5. Now install All the required libraries with pip as mentioned in menioned in documentation.
-6. After that run: 'python manage.py loaddata Movie.json
+6. After that run: 'python manage.py loaddata Movie.json'
 7. Now Create a Super User by running following command 'python manage.py createsuperuser' and fill the asked details.
-8. Now test of your patience ends here Run the following command for starting project 'python manage.py runserver'
-9. Now run towards your browser and type 'localhost:port_number_mention when you run the previous command/CinemaHole'
+8. Now test of your patience ends here Run the following command for starting project 'python manage.py runserver'.
+9. Now run towards your browser and type 'localhost:port_number_mention when you run the previous command/CinemaHole'.
 10. Hmm How's it, please give your feedback at 'balwantdod223@gmail.com' and please don't complain about the design or make fun of it.I got all the recommandation from my family(farmers) they never touched a computer in their life. Then don't expect a good design from them,all you gonna see is green and coral.........

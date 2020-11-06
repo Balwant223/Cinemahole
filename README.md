@@ -12,6 +12,7 @@ Libraries required for this project-:
 4. SKlearn ( Installation Guide https://scikit-learn.org/stable/install.html ).
 5. Pandas ( Installation Guide https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html ).
 6. Django-Taggit ( Installation https://pypi.org/project/django-taggit/ )
+                      
                       ( ******* And After All of that You must have python in your machine  ******* )
 
 # How ot run

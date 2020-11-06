@@ -13,9 +13,10 @@ Libraries required for this project-:
 5. Pandas ( Installation Guide https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html ).
 6. Django-Taggit ( Installation https://pypi.org/project/django-taggit/ )
 ( ******* And After All of that You must have python in your machine  ******* )
+
 # How ot run
 Clone the project to your local Directorty.
 Then Cd "Project_Folder"
-Create a virtual environment ( On macOS and Linux: python3 -m venv your_env_name , On Windows(**Creep**): py -m venv your_env_name )
+Create a virtual environment ( On macOS and Linux: python3 -m venv your_env_name , On Windows(****Creep****): py -m venv your_env_name )
 Activate Environment ( On macOS and Linux: env/bin/activate On Windows(****Again Creeps****): .\env\Scripts\activate )
-
+# [****** Important All this above and below Commands must run on your project Source Directories *****)

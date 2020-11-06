@@ -17,9 +17,18 @@ Libraries required for this project-:
 
 # How ot run
 1. Clone the project to your local Directorty.
-2. Then Cd "Project_Folder"
-3. Create a virtual environment ( On macOS and Linux: python3 -m venv your_env_name , On Windows(****Creep****): py -m venv your_env_name )
-4. Activate Environment ( On macOS and Linux: env/bin/activate On Windows(****Again Creeps****): .\env\Scripts\activate )
+2. Then 
+                                     Cd "Project_Folder"
+3. Create a virtual environment:
+      On macOS and Linux: 
+                                     python3 -m venv your_env_name 
+      On Windows(****Creep****):
+                                     py -m venv your_env_name )
+4. Activate Environment :
+      On macOS and Linux:
+                                     env/bin/activate 
+      On Windows(****Again Creeps****):
+                                     .\env\Scripts\activate )
                     
                     [****** Important All this above and below Commands must run on your project Source Directories *****]
                     

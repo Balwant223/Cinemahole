@@ -8,6 +8,14 @@ Its a WebApp, completely build on Django Framework and a ML model I've trained. 
 Libraries required for this project-:
 1. Django (Read the documentation if you don't know how to install and run https://docs.djangoproject.com/en/3.1/topics/install/).
 2. Django-Restframework ( Installation Tutorial https://www.django-rest-framework.org/#installation).
-3. Database (I've suggest PostGres for faster search here is documentation for database setup https://docs.djangoproject.com/en/3.1/ref/databases/ ).
+3. Database (I suggest PostGres for faster search here is documentation for database setup https://docs.djangoproject.com/en/3.1/ref/databases/ ).
 4. SKlearn ( Installation Guide https://scikit-learn.org/stable/install.html ).
 5. Pandas ( Installation Guide https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html ).
+6. Django-Taggit ( Installation https://pypi.org/project/django-taggit/ )
+( ******* And After All of that You must have python in your machine  ******* )
+# How ot run
+Clone the project to your local Directorty.
+Then Cd "Project_Folder"
+Create a virtual environment ( On macOS and Linux: python3 -m venv your_env_name , On Windows(**Creep**): py -m venv your_env_name )
+Activate Environment ( On macOS and Linux: env/bin/activate On Windows(****Again Creeps****): .\env\Scripts\activate )
+

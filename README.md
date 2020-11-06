@@ -20,7 +20,9 @@ Libraries required for this project-:
 2. Then Cd "Project_Folder"
 3. Create a virtual environment ( On macOS and Linux: python3 -m venv your_env_name , On Windows(****Creep****): py -m venv your_env_name )
 4. Activate Environment ( On macOS and Linux: env/bin/activate On Windows(****Again Creeps****): .\env\Scripts\activate )
-#                 [****** Important All this above and below Commands must run on your project Source Directories *****)
+                    
+                    [****** Important All this above and below Commands must run on your project Source Directories *****]
+                    
 5. Now install All the required libraries with pip as mentioned in menioned in documentation.
 6. After that run: 'python manage.py loaddata Movie.json
 7. Now Create a Super User by running following command 'python manage.py createsuperuser' and fill the asked details.

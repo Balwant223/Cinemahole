@@ -4,10 +4,10 @@ Beyond just entertaining us, in uncertain times great movies remind us of fundam
 And for this come forth my project CinemaHole.We know that everyone have their own  distinct flavour for movies.And for that I Created this project. It recommand person a movie acording to thier flavour. 
 Its a WebApp, completely build on Django Framework and a ML model I've trained. What it does is that it shows you accurate recommendation on movies base of your profile.
 
-#Requirements
+# Requirements
 Libraries required for this project-:
-1. Django (Read the documentation if you don't know how to install and run https://docs.djangoproject.com/en/3.1/topics/install/)
-2.Django-Restframework ( Installation Tutorial https://www.django-rest-framework.org/#installation)
-3.Database (I've suggest PostGres for faster search here is documentation for database setup https://docs.djangoproject.com/en/3.1/ref/databases/ )
-4.SKlearn ( Installation Guide https://scikit-learn.org/stable/install.html )
-5.Pandas ( Installation Guide https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html )
+1. Django (Read the documentation if you don't know how to install and run https://docs.djangoproject.com/en/3.1/topics/install/).
+2. Django-Restframework ( Installation Tutorial https://www.django-rest-framework.org/#installation).
+3. Database (I've suggest PostGres for faster search here is documentation for database setup https://docs.djangoproject.com/en/3.1/ref/databases/ ).
+4. SKlearn ( Installation Guide https://scikit-learn.org/stable/install.html ).
+5. Pandas ( Installation Guide https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html ).

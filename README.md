@@ -15,9 +15,9 @@ Libraries required for this project-:
                       
                       ( ******* And After All of that You must have python in your machine  ******* )
 
-# How ot run
-1. Clone the project to your local Directorty.
-2. Then 
+# How to run
+1. Clone the project to your local Directory.
+2. Then run all the commands on terminal/cmd
                                              'Cd "Project_Folder" '
 3. Create a virtual environment:
       On macOS and Linux: 
@@ -32,7 +32,7 @@ Libraries required for this project-:
                     
                     [****** Important All this above and below Commands must run on your project Source Directories *****]
                     
-5. Now install All the required libraries with pip as mentioned in menioned in documentation.
+5. Now install All the required libraries with pip as mentioned in documentation.
 6. After that run: 'python manage.py loaddata Movie.json'
 7. Now Create a Super User by running following command 'python manage.py createsuperuser' and fill the asked details.
 8. Now test of your patience ends here Run the following command for starting project 'python manage.py runserver'.
